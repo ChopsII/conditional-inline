@@ -1,0 +1,3 @@
+[submodule "cmaked-ez"]
+	path = cmaked-ez
+	url = https://github.com/ChopsII/cmaked-ez.git
