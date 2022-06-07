@@ -15,9 +15,10 @@
 
 #include <memory>
 
+COND_INLINE
 void* lib_test_project::free_function()
 {
-    int blah;
+    static int blah;
     return std::addressof(blah);
 }
 

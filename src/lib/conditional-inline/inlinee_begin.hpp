@@ -33,7 +33,7 @@
 
 #pragma message ("Note: not compiling the inlinee at this time")
 
-#pragma message("Conditional inlining is on,, but we're not currently inlining - chances are either we're compiling the file directly, which means we skip the target or we've already included the target")
+#pragma message("Conditional inlining is on, but we're not currently inlining - chances are either we're compiling the file directly, which means we skip the target or we've already included the target")
 
 #endif
 

@@ -17,17 +17,22 @@
 
 #include <memory>
 
+COND_INLINE
 lib_test_project::Class::Class()
     : non_static_data_member{}
 {}
 
-void lib_test_project::Class::static_member_function()
+COND_INLINE
+int* lib_test_project::Class::static_member_function()
 {
+    static int blah;
+    return std::addressof(blah);
 }
 
-void* lib_test_project::Class::non_static_member_function()
+COND_INLINE
+int* lib_test_project::Class::non_static_member_function()
 {
-    int blah;
+    static int blah;
     return std::addressof(blah);
 }
 

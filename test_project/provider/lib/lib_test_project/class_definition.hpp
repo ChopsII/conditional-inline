@@ -14,13 +14,18 @@ namespace lib_test_project
 {
     struct Class
     {
-        COND_INLINE Class();
+        COND_INLINE
+        Class();
 
-        COND_INLINE static void static_member_function();
+        COND_INLINE
+        static 
+        int* static_member_function();
 
-        COND_INLINE void* non_static_member_function();
+        COND_INLINE
+        int* non_static_member_function();
 
-        COND_INLINE_DATA static int static_data_member;
+        COND_INLINE_DATA
+        static int static_data_member;
 
         int non_static_data_member;
     };

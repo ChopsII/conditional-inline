@@ -10,7 +10,7 @@
 
 namespace lib_test_project
 {
-    COND_INLINE void* free_function();
+    void* free_function();
 }
 
 #define TARGET "free_function_definition.cpp"
